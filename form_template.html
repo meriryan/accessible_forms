@@ -8,27 +8,40 @@
 </head>
 <body>
 
- <form>
+ <form
+  action="https://formspree.io/f/xeopaylp"
+  method="POST"
+  >
   <fieldset>
     <legend>Sample Form</legend>
-    Your Name
-    <input type="text" placeholder="Enter Your Name">
+    
+    <label for="full_name">Your Name</label>
+    <input type="text" id= "full_name" name="full_name" placeholder="Enter Your Name">
 
-    Your Email
-    <input type="email">
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="sample@gmail.com">
 
 
-    Your Phone Number
-    <input type="tel">
+    <label for="number">Your Phone Number</label>
+    <input type="tel" id="number" name="number" placeholder="123-456-7890">
     <div><span>Format: 123-456-7890</span></div>
 
+    <label for="fav_color">Your Favorite Color:</label>
+    <input type="color" id="fav_color" name="fav_color">
 
-    Leave A Message
+    <label for="bday">Your Birthday:</label>
+    <input type="date" id="bday" name="bday">
 
-    <textarea></textarea>
+    <label for="feels">How do you feel today:</label>
+    
+    <input type="range" id="feels" name="feels">
+    
+    <label for="Message">Leave A Message:</label>
 
-    <input type="checkbox"> 
-    Remember me
+    <textarea id="Message" name="Message"></textarea>
+
+    <label for="remember">Remember me</label>
+    <input type="checkbox" id="remember" name="remember"> 
 
     <input type="submit" >
   </fieldset>
